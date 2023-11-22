@@ -50,11 +50,12 @@ T Stack<T>::Pop()
 template <typename T>
 T Stack<T>::Peek()
 {
-    if (!head)
-    {
+    
+    if(!this->Head){
         return -1;
     }
-    return this->Head->GetValue();
+    T ans = this->Head->GetValue();
+    return ans;
 }
 template class Stack<int>;
 template class Stack<float>;
