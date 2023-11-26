@@ -15,7 +15,7 @@ void BubbleSort(vector<int> &nums){
 }
 int main()
 {
-    vector<int> n{1,2,5,9,7};
+    vector<int> n{9,8,7,6,5,4};
     BubbleSort(n);
 
     for(int i=0;i<n.size();i++){
