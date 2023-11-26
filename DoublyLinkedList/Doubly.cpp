@@ -57,6 +57,11 @@ void Doubly<T>::InsertAt(int index, T val)
 template <typename T>
 void Doubly<T>::Print()
 {
+    if(!this->Head||!this->Tail){
+        std::cout<<"List is empty"<<std::endl;
+        return;
+    }
+    std::cout<<"List is"<<std::endl;
     Node<T> *curr = this->Head;
 
     while (curr)
